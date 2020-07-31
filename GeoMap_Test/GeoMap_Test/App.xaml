@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GeoMap_Test.App">
+    <Application.Resources>
+        <Style x:Key="CustomLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="Large"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="BackgroundColor" Value="Ivory"/>
+            <Setter Property="WidthRequest" Value="150"/>
+            <Setter Property="HeightRequest" Value="80"/>
+            <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            <Setter Property="VerticalTextAlignment" Value="Center"/>
+        </Style>
+        <Style x:Key="CustomButton" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="LightGray"/>
+            <Setter Property="WidthRequest" Value="180"/>
+            <Setter Property="HeightRequest" Value="60"/>
+            <Setter Property="CornerRadius" Value="15"/>
+        </Style>
+    </Application.Resources>
+</Application>

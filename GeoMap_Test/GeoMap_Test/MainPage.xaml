@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GeoMap_Test.MainPage"
+             Title="Geo Map Application"
+             BackgroundImageSource="dreamstime_xxl_88693404.jpg">
+
+    <ContentPage.Content>
+        <StackLayout Spacing="100" VerticalOptions="CenterAndExpand">
+            <StackLayout Padding="10">
+                <Label Text="Welcome to the GeoMapUnion test." 
+                       HorizontalOptions="Center" FontSize="Large" TextColor="Brown"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center">
+                <Button Text="Get your location" Clicked="GetYourLocation_Clicked" 
+                        Style="{StaticResource CustomButton}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="60">
+                <Label Text="Latitude" x:Name="YourLocationLatitude" Style="{StaticResource CustomLabel}"/>
+                <Label Text="Longitude" x:Name="YourLocationLongitude" Style="{StaticResource CustomLabel}"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center">
+                <Button Text="Go To Map" Clicked="GoToMap_Clicked" Style="{StaticResource CustomButton}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
